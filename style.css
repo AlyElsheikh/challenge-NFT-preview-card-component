@@ -1,0 +1,144 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    background-color: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 450px;
+    margin-top: 113px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+.container::after{
+    content: "";
+    position: absolute;
+    width: 295px;
+    height: 465px;
+    background-color: #0C1729;
+    top: 15px;
+    left: -15px;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.container .container-img img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.container .container-img {
+    position: relative;
+    cursor: pointer;
+}
+
+.container .container-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    top: 0;
+    left: 0;
+    background-color: hsl(178, 100%, 50% , 0);
+    z-index: 10;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.container .container-img:hover::before{
+    background-color: hsl(178, 100%, 50% , 50%);    
+}
+
+.container h1 {
+    margin: 15px 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.container h1:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.container p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #637894;
+    line-height: 1.5;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.info::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 0.5px;
+    background-color: #2C3E56;
+    bottom: 65px;
+    left: 20px;
+}
+
+.info span {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: hsl(215, 51%, 70%);
+}
+.info .span1{
+    color: hsl(178, 100%, 50%);
+}
+.info .span1 img {
+    width: 8px;
+    margin-right: 2px;
+}
+.info .span2 img {
+    width: 13px;
+    margin-right: 4px;
+}
+
+.creator{
+    margin-top: 15px;
+    display: flex;
+}
+
+.creator img {
+    width: 25px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+
+.creator span {
+    margin-top: 4px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #637894;
+}
+
+.creator span a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+.creator span a:hover{
+    color: hsl(178, 100%, 50%);
+}
