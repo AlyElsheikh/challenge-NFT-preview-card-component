@@ -1,0 +1,1 @@
+# frontendmentor-challenge-NFT-preview-card-component.
